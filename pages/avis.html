@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avis – Hôtel Chambord</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="hero" style="background-image: url('../img/chateau.jpg')" role="img" aria-label="Hôtel Chambord"></header>
+  <div id="nav"></div>
+
+  <main class="container">
+    <section class="text-center mb-5">
+      <h1>Votre avis compte pour nous !</h1>
+      <p class="mx-auto col-lg-9">Découvrez les avis de nos clients sur leur séjour à l'hôtel Chambord. Vos retours sont précieux pour nous aider à améliorer nos services et à vous offrir une expérience inoubliable. Nous vous invitons à laisser votre propre avis à la fin de cette page.</p>
+    </section>
+    <section class="text-center my-5"><h2 class="h3">Les chambres</h2><p class="mb-4">Voici ce que nos clients pensent de nos chambres.</p><div id="avis-chambres"></div></section>
+    <section class="text-center my-5"><h2 class="h3">Le restaurant et le bar</h2><p class="mb-4">Voici ce que nos clients pensent de notre restaurant et de notre bar.</p><div id="avis-restaurant"></div></section>
+    <section class="text-center my-5"><h2 class="h3">Le spa</h2><p class="mb-4">Notre espace bien-être a été conçu pour vous offrir une expérience de détente inoubliable.</p><div id="avis-spa"></div></section>
+    <section class="text-center my-5"><h2 class="h3">Les activités</h2><p class="mb-4">Voici ce que nos clients pensent de nos activités.</p><div id="avis-activites"></div></section>
+    <section class="my-5">
+      <h2 class="text-center mb-4">Laissez-nous votre avis</h2>
+      <form class="demo mx-auto col-md-8 col-lg-5" action="#" method="post" enctype="multipart/form-data" novalidate>
+        <div class="mb-3"><label class="form-label" for="a-nom">Nom</label><input class="form-control" id="a-nom" name="nom" required></div>
+        <div class="mb-3"><label class="form-label" for="a-prenom">Prénom</label><input class="form-control" id="a-prenom" name="prenom" required></div>
+        <div class="mb-3"><label class="form-label" for="a-email">Email</label><input type="email" class="form-control" id="a-email" name="email" required></div>
+        <div class="mb-3"><label class="form-label" for="a-photo">Votre photo</label><input type="file" class="form-control" id="a-photo" name="photo" accept="image/*"></div>
+        <div class="mb-3"><label class="form-label" for="a-avis">Votre avis</label><textarea class="form-control" id="a-avis" name="avis" rows="4" required></textarea></div>
+        <button type="submit" class="btn btn-dark w-100">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/layout.js"></script>
+  <script>afficherAvis("avis-chambres", "chambres");afficherAvis("avis-restaurant", "restaurant");afficherAvis("avis-spa", "spa");afficherAvis("avis-activites", "activites");</script>
+</body>
+</html>

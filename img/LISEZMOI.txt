@@ -1,0 +1,3 @@
+Images attendues (à copier depuis le dossier ref de l'AP, en gardant ces noms) :
+logo.png, chateau.jpg, reservation.jpg, activites.jpg (montgolfière),
+velo.jpg, montgolfiere.jpg, golf.jpg, maria.jpg, lisa.jpg, john.jpg

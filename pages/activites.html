@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Activités – Hôtel Chambord</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="hero" style="background-image: url('../img/activites.jpg')" role="img" aria-label="Hôtel Chambord"></header>
+  <div id="nav"></div>
+
+  <main class="container">
+    <h1>Les Activités à proximité de l'hôtel Chambord</h1>
+    <p>Découvrez une variété d'activités et de loisirs à proximité de l'hôtel Chambord. Que vous soyez amateur de nature, d'histoire ou de gastronomie, il y en a pour tous les goûts.</p>
+
+    <div id="carousel" class="carousel slide my-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active"><img src="../img/velo.jpg" alt="Groupe de cyclistes"></div>
+        <div class="carousel-item"><img src="../img/montgolfiere.jpg" alt="Montgolfières au lever du jour"></div>
+        <div class="carousel-item"><img src="../img/golf.jpg" alt="Balle de golf sur un tee"></div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Précédent</span></button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Suivant</span></button>
+    </div>
+
+    <div class="row g-4 align-items-center bloc">
+      <div class="col-12 col-md-5"><img src="../img/velo.jpg" alt="Cyclistes devant leurs vélos"></div>
+      <div class="col-12 col-md-7"><h2 class="h4">Les balades à vélo</h2><p>Découvrez les magnifiques paysages du Domaine de Chambord à vélo. Nous proposons des itinéraires adaptés à tous les niveaux, que vous soyez amateur de balades tranquilles ou de randonnées plus sportives.</p><p>Louez un vélo directement à l'hôtel et partez à la découverte des sentiers pittoresques qui entourent le château.</p></div>
+    </div>
+    <div class="row g-4 align-items-center bloc flex-md-row-reverse">
+      <div class="col-12 col-md-5"><img src="../img/montgolfiere.jpg" alt="Montgolfières"></div>
+      <div class="col-12 col-md-7"><h2 class="h4">Les vols en montgolfière</h2><p>Vivez une expérience inoubliable en survolant le Château de Chambord en montgolfière. Admirez la majesté du château et la beauté des paysages environnants depuis les airs.</p><p>Nos vols sont encadrés par des professionnels expérimentés qui vous garantiront une expérience en toute sécurité.</p></div>
+    </div>
+    <div class="row g-4 align-items-center bloc">
+      <div class="col-12 col-md-5"><img src="../img/golf.jpg" alt="Balle de golf"></div>
+      <div class="col-12 col-md-7"><h2 class="h4">Notre Golf</h2><p>Notre parcours de golf 18 trous, conçu par des architectes de renom, offre un défi passionnant pour les golfeurs de tous niveaux, avec des vues imprenables sur le château et les jardins.</p><p>Des leçons de golf sont disponibles pour ceux qui souhaitent améliorer leur jeu, et notre club-house vous attend après une journée sur le parcours.</p></div>
+    </div>
+
+    <section class="text-center my-5">
+      <h2>Témoignages</h2>
+      <p class="mb-4">Voici ce que nos clients pensent de nos activités.</p>
+      <div id="avis-activites"></div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/layout.js"></script>
+  <script>afficherAvis("avis-activites", "activites");</script>
+</body>
+</html>

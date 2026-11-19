@@ -1,0 +1,17 @@
+/* Hôtel Chambord – styles communs (Bootstrap 5 + ajustements) */
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #212529; }
+.hero { height: 60vh; min-height: 240px; background: center / cover no-repeat #6c757d; }
+.navbar { box-shadow: 0 2px 8px rgba(0, 0, 0, .15); }
+.navbar-brand img { height: 44px; width: auto; }
+main { padding: 3rem 0 2rem; }
+main h1, main h2 { font-weight: 400; }
+.bloc { margin: 3.5rem 0; }
+.bloc img, .carousel img { width: 100%; object-fit: cover; border-radius: .5rem; }
+.bloc img { max-height: 320px; }
+.carousel img { height: clamp(220px, 45vw, 480px); }
+.temoignage img { width: 150px; height: 150px; object-fit: cover; border-radius: 50%; }
+.etoiles { color: #ffc107; }
+.carte-offre { border: 0; box-shadow: 0 2px 8px rgba(0, 0, 0, .1); }
+footer { background: #f8f9fa; padding: 3rem 0 1rem; margin-top: 3rem; }
+footer .mention { font-size: .7rem; font-style: italic; }
+@media (max-width: 767.98px) { .hero { height: 40vh; } .bloc { margin: 2.5rem 0; } }

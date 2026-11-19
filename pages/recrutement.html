@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recrutement – Hôtel Chambord</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="hero" style="background-image: url('../img/chateau.jpg')" role="img" aria-label="Hôtel Chambord"></header>
+  <div id="nav"></div>
+
+  <main class="container">
+    <h1>Rejoignez notre équipe</h1>
+    <p>Nous sommes toujours à la recherche de nouveaux talents pour rejoindre notre équipe à l'hôtel Chambord. Si vous êtes passionné(e) par l'hôtellerie et que vous souhaitez travailler dans un cadre exceptionnel, consultez nos offres d'emploi ci-dessous.</p>
+    <div class="row g-4 my-4">
+      <div class="col-12 col-lg-4"><div class="card carte-offre h-100"><div class="card-body">
+        <h3 class="h5">Commis de cuisine</h3>
+        <p class="mb-1"><strong>Description du poste :</strong> Préparation des ingrédients, entretien de la cuisine et assistance au chef.</p>
+        <p class="mb-1"><strong>Profil recherché :</strong> Dynamique, organisé(e) et passionné(e) par la cuisine.</p>
+        <p class="mb-1"><strong>Lieu :</strong> Chambord</p>
+        <p class="mb-0"><strong>Contact :</strong> recrutement@chambord.fr</p>
+      </div></div></div>
+      <div class="col-12 col-lg-4"><div class="card carte-offre h-100"><div class="card-body">
+        <h3 class="h5">Agent d'accueil</h3>
+        <p class="mb-1"><strong>Description du poste :</strong> Accueil des visiteurs, information des clients et qualité de l'expérience.</p>
+        <p class="mb-1"><strong>Profil recherché :</strong> Sourire, sens du contact et maîtrise du français et de l'anglais.</p>
+        <p class="mb-1"><strong>Lieu :</strong> Chambord</p>
+        <p class="mb-0"><strong>Contact :</strong> recrutement@chambord.fr</p>
+      </div></div></div>
+      <div class="col-12 col-lg-4"><div class="card carte-offre h-100"><div class="card-body">
+        <h3 class="h5">Femme de chambre</h3>
+        <p class="mb-1"><strong>Description du poste :</strong> Propreté et entretien des chambres de l'hôtel.</p>
+        <p class="mb-1"><strong>Profil recherché :</strong> Sens de l'organisation, rigueur et discrétion.</p>
+        <p class="mb-1"><strong>Lieu :</strong> Chambord</p>
+        <p class="mb-0"><strong>Contact :</strong> recrutement@chambord.fr</p>
+      </div></div></div>
+    </div>
+    <section class="card carte-offre mx-auto col-lg-8"><div class="card-body">
+      <h2 class="h4 mb-3">Postuler</h2>
+      <form class="demo" action="#" method="post" enctype="multipart/form-data" novalidate>
+        <div class="mb-3"><label class="form-label" for="r-nom">Nom</label><input class="form-control" id="r-nom" name="nom" required></div>
+        <div class="mb-3"><label class="form-label" for="r-prenom">Prénom</label><input class="form-control" id="r-prenom" name="prenom" required></div>
+        <div class="mb-3"><label class="form-label" for="r-email">Email</label><input type="email" class="form-control" id="r-email" name="email" required></div>
+        <div class="mb-3"><label class="form-label" for="r-poste">Poste visé</label><select class="form-select" id="r-poste" name="poste" required><option value="" selected disabled>Choisissez une offre</option><option>Commis de cuisine</option><option>Agent d'accueil</option><option>Femme de chambre</option></select></div>
+        <div class="mb-3"><label class="form-label" for="r-cv">CV (PDF)</label><input type="file" class="form-control" id="r-cv" name="cv" accept=".pdf" required></div>
+        <div class="mb-3"><label class="form-label" for="r-lm">Lettre de motivation (PDF)</label><input type="file" class="form-control" id="r-lm" name="lettre" accept=".pdf"></div>
+        <button type="submit" class="btn btn-dark">Envoyer ma candidature</button>
+      </form>
+    </div></section>
+  </main>
+
+  <div id="footer"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/layout.js"></script>
+</body>
+</html>
